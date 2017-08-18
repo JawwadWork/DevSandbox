@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Job Card</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Job Cards</value>
+    </caseValues>
+    <fields>
+        <label><!-- Date --></label>
+        <name>Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Engine Number --></label>
+        <name>Engine_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter First Name of the customer --></help>
+        <label><!-- First Name --></label>
+        <name>First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Number --></label>
+        <name>Job_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the last name of the customer --></help>
+        <label><!-- Last Name --></label>
+        <name>Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Make --></label>
+        <name>Make__c</name>
+        <picklistValues>
+            <masterLabel>BMW</masterLabel>
+            <translation><!-- BMW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ford</masterLabel>
+            <translation><!-- Ford --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Holden</masterLabel>
+            <translation><!-- Holden --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mazda</masterLabel>
+            <translation><!-- Mazda --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mercedez</masterLabel>
+            <translation><!-- Mercedez --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nissan</masterLabel>
+            <translation><!-- Nissan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tesla</masterLabel>
+            <translation><!-- Tesla --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Toyota</masterLabel>
+            <translation><!-- Toyota --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Volks Wagon</masterLabel>
+            <translation><!-- Volks Wagon --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Model --></label>
+        <name>Model__c</name>
+        <picklistValues>
+            <masterLabel>Astra</masterLabel>
+            <translation><!-- Astra --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Barina</masterLabel>
+            <translation><!-- Barina --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Caprice</masterLabel>
+            <translation><!-- Caprice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Captiva</masterLabel>
+            <translation><!-- Captiva --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commodore</masterLabel>
+            <translation><!-- Commodore --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cruze</masterLabel>
+            <translation><!-- Cruze --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Falcon</masterLabel>
+            <translation><!-- Falcon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fiesta</masterLabel>
+            <translation><!-- Fiesta --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Focus</masterLabel>
+            <translation><!-- Focus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mustang</masterLabel>
+            <translation><!-- Mustang --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Territory</masterLabel>
+            <translation><!-- Territory --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ODO Meter --></label>
+        <name>ODO_Meter__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter valid phone number --></help>
+        <label><!-- Phone --></label>
+        <name>Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Registration Number --></label>
+        <name>Registration_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please select State --></help>
+        <label><!-- State --></label>
+        <name>State__c</name>
+        <picklistValues>
+            <masterLabel>ACT</masterLabel>
+            <translation><!-- ACT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NSW</masterLabel>
+            <translation><!-- NSW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NT</masterLabel>
+            <translation><!-- NT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QLD</masterLabel>
+            <translation><!-- QLD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SA</masterLabel>
+            <translation><!-- SA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TAS</masterLabel>
+            <translation><!-- TAS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIC</masterLabel>
+            <translation><!-- VIC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WA</masterLabel>
+            <translation><!-- WA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Please enter the street address of the customer --></help>
+        <label><!-- Street Address --></label>
+        <name>Street_Address__c</name>
+    </fields>
+    <fields>
+        <help><!-- Vehicle Identification Number --></help>
+        <label><!-- VIN --></label>
+        <name>VIN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year --></label>
+        <name>Year__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

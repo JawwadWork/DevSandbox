@@ -1,0 +1,39 @@
+<apex:page standardController="Account" extensions="StandardAccountEx">
+ <apex:form >
+  <apex:outputPanel id="oPanel">
+  
+  <apex:pageblock title="Account Edit" mode="Edit" id="pBlock" >
+  
+   <apex:pageBlockButtons >
+       <apex:commandButton value="Cancel" action="{!Cancel}"/>
+       <apex:commandButton value="Save" action="{!Save}"/>
+       
+   </apex:pageBlockButtons>
+   
+  <apex:actionFunction name="aExpand" reRender="oPanel"/>
+  <apex:actionFunction name="iSearch" action="{!cSIC}" reRender="oPanel"/>
+  
+  <apex:pageblockSection Title="Account Information" Columns="2">
+   <apex:inputField value="{!Account.name}"/>
+   <apex:inputField value="{!Account.rating}" />
+   <apex:inputField value="{!Account.Accountnumber}"/>
+   <apex:inputField value="{!Account.phone}" required="true"/>
+   <apex:inputField value="{!Account.Industry}"/>
+   <apex:inputField value="{!Account.Type}"/>
+   <apex:inputCheckbox value="{!billingInfo}" label="Billing Information" onclick="aExpand();"/ > 
+   <apex:inputText value="{!Account.SIC}"/>
+   
+  </apex:pageblockSection>
+  
+  <apex:pageBlockSection title="Billing Information" rendered="{!billingInfo}" id="biladd">
+   <apex:inputField value="{!Account.BillingStreet}"/>
+   <apex:inputField value="{!Account.BillingCity}"/>
+   <apex:inputField value="{!Account.Billingpostalcode}"/>
+   <apex:inputField value="{!Account.BillingCountry}" onChange="iSearch();" /> 
+
+   </apex:pageBlockSection>
+  
+  </apex:pageblock>
+    </apex:outputPanel>
+ </apex:form>
+</apex:page>

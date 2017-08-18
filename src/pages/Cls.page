@@ -1,0 +1,21 @@
+<apex:page controller="ClsController">
+    <apex:form >
+        <apex:image value="{!$Resource.banner}"/>
+         <apex:pageBlock title="Nominate Contacts">
+         
+             <apex:pageBlockButtons >
+                 <apex:commandButton value="save" action="{!save}"/>
+             </apex:pageBlockButtons>
+            <apex:pageblockTable value="{!contacts}" var="contact">
+                <apex:column value="{!contact.id}"/>
+                <apex:column value="{!contact.name}"/>
+                <apex:column >
+                    <apex:inputField value="{!contact.email}"/>
+                    <apex:inputfield value="{!contact.phone}"/>
+                </apex:column>
+                <apex:column value="{!contact.phone}"/>
+                <apex:column value="{!contact.accountId}"/>
+            </apex:pageblockTable> 
+         </apex:pageBlock>
+     </apex:form>
+</apex:page>

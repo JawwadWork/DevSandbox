@@ -1,0 +1,37 @@
+<apex:page controller="CreateAccntContact" tabStyle="Account"  >
+  <!-- This is a test VisualForce Page create 
+  Account Contact and Opportunity-->
+  
+  <h1>Account Contact Opportunity</h1>
+ 
+  <!-- End Default Content REMOVE THIS -->
+ <apex:form >
+  <apex:pageBlock >
+   <apex:pageBlockSection columns="1" title="Account">
+    <apex:inputText value="{!aName}" label="Name"/>
+    <apex:inputText value="{!aPhone}" label="Phone"/>
+   </apex:pageBlockSection>
+  </apex:pageBlock>
+  
+  <apex:pageblock >
+   <apex:pageblockSection Columns="1" title="Contact" >
+    <apex:inputText value="{!cLname}" label="Last Name"/>
+    <apex:inputText value="{!cEmail}" label="Email"/>
+    </apex:pageblockSection>
+   </apex:pageblock>
+   
+  <apex:pageblock >
+   <apex:pageBlockSection columns="1" title="Opportunity" showHeader="true">
+    <apex:inputText value="{!oName}" label="Name"/>
+    <apex:inputText value="{!oStage}" label="Stage Name"/>
+    <apex:inputText value="{!oCloseDate}" label="Closing Date"/>
+    
+   
+   </apex:pageBlockSection>
+  
+  
+  </apex:pageblock>
+   
+   <apex:commandButton action="{!aSave}" value="Save" style="background:yellow; color:Blue;"/>
+ </apex:form>
+</apex:page>

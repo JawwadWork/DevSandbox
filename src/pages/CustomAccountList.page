@@ -1,0 +1,37 @@
+<apex:page controller="CustomAccountList" tabStyle="Account">
+ <apex:form >
+ <apex:pageBlock >
+  
+  
+   <apex:inputText value="{!aSearch}" label="Account Name"/>
+   <apex:commandButton action="{!sAccount}" value="Search" style="color:blue; background:yellow"/>
+   
+   
+   
+   <apex:pageBlockSection title="Account" columns="1">
+   <apex:pageBlockTable value="{!aList}" var="a">
+    <apex:column value="{!a.name}"/>
+    <apex:column value="{!a.phone}"/>
+    </apex:pageBlockTable>
+   </apex:pageBlockSection>
+   
+   <apex:pageblockSection Title="Contact" Columns="1">
+   <apex:pageBlockTable value="{!cList}" var="c">
+    <apex:column value="{!c.Firstname}"/>
+    <apex:column value="{!c.Lastname}"/>
+    <apex:column value="{!c.email}"/>
+   </apex:pageBlockTable>
+   </apex:pageblockSection>
+   
+   <apex:pageBlockSection title="Opportunity" columns="1">
+    <apex:pageBlockTable value="{!oList}" var="o">
+    <apex:column value="{!o.Name}"/>
+    <apex:column value="{!o.Stagename}"/>
+    <apex:column value="{!o.Closedate}"/>
+       
+   </apex:pageBlockTable>
+   </apex:pageBlockSection>
+ 
+ </apex:pageBlock>
+ </apex:form>
+</apex:page>

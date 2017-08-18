@@ -1,0 +1,39 @@
+<apex:page Controller="cCustom">
+
+<apex:form >
+    
+ <apex:pageBlock >
+  
+  <apex:pageBlockSection Columns="1">
+  
+     <apex:inputText value="{!valueOne}" Label="Value One" />
+     <apex:inputText value="{!valueTwo}" Label="Value Two" />
+     <apex:outputText value="{!result}" Label="Result"> </apex:outputText>
+     
+   </apex:pageBlockSection>
+  
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+    <apex:pageBlockButtons style="align:left;">
+     <apex:commandButton action="{!mulValues}" value="Multiply" />&nbsp;&nbsp;&nbsp;
+     <apex:commandButton action="{!divValues}" value="Division" />&nbsp;&nbsp;&nbsp;
+     <apex:commandButton action="{!subValues}" value="Subtraction" />&nbsp;&nbsp;&nbsp;
+     <apex:commandButton action="{!addValues}" value="Addition"/>
+    </apex:pageBlockButtons>
+    
+   </apex:pageBlock>
+   
+   <apex:pageBlock title="Google " >
+    <apex:pageBlockSection columns="1" >
+     <apex:inputText value="{!gSearch}" style="color:blue"/>
+     <apex:commandButton action="{!gGoogleSearch}" value="    Google Search    " style="color:darkblue; background:yellow;" />
+    </apex:pageBlockSection>
+   </apex:pageBlock>
+ 
+ </apex:form>
+</apex:page>

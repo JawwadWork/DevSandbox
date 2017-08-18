@@ -1,0 +1,26 @@
+<apex:page StandardController="Contact" >
+  <apex:form >
+     <apex:pageBlock Title="Contact" Mode="Edit">
+      <apex:pageBlockButtons >
+       <apex:commandButton value="Save" style="color:blue;" action="{!Save}"/>
+       <apex:commandButton value="Cancel" style="color:Green; background-color:#ffcc00;" action="{!Cancel}"/>
+      </apex:pageBlockButtons>
+      <apex:pageBlockSection Title="Contact Information">
+            <apex:inputField style="background-color:white; color:Blue; border:none; " value="{!Contact.Salutation}"/> 
+            <apex:inputField style="background-color:white; color:blue; border:solid; " value="{!Contact.AccountId}"/>
+             <apex:inputField style="color:red;" value="{!Contact.LastName}"/>
+             <apex:inputField style="color:Green; border:dotted;" Value="{!Contact.Phone}"/>
+            
+
+      </apex:pageBlockSection>
+      <apex:pageBlockSection Title="Address Information" Columns="1" collapsible="true">
+            <apex:inputField style="background-color:#ffff00; border:none;" value="{!Contact.Phone}"/> 
+            <apex:inputField style="background-color:#00ffff; border:none;" value="{!Contact.FirstName}"/>
+             <apex:inputField value="{!Contact.LastName}"/>
+             <apex:inputField Value="{!Contact.Phone}"/>
+            
+
+      </apex:pageBlockSection>
+    </apex:pageBlock>
+  </apex:form>
+</apex:page>
